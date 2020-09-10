@@ -1,14 +1,14 @@
 import firebase from 'firebase'
 
 const firebaseApp = firebase.initializeApp( {
-    apiKey: "AIzaSyBLERLCyJ92Y0OCKECCqK6jFTAZUg2__g0",
-    authDomain: "ecomm-site-9d986.firebaseapp.com",
-    databaseURL: "https://ecomm-site-9d986.firebaseio.com",
-    projectId: "ecomm-site-9d986",
-    storageBucket: "ecomm-site-9d986.appspot.com",
-    messagingSenderId: "39763797018",
-    appId: "1:39763797018:web:66cee5951e7dca4a2bdda3",
-    measurementId: "G-ETTDNYPWR1"
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    databaseURL: process.env.DATABASE_URL,
+    projectId: process.env.PROJECT_ID,
+    storageBucket: process.env.STORAGE_BUCKET,
+    messagingSenderId: process.env.MESSAGING_SENDERID,
+    appId: process.env.APP_ID,
+    measurementId: process.env.MEASUREMENT_ID
   });
 
   const db = firebaseApp.firestore();
